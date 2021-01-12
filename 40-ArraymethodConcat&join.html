@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Javascript</title>
+       
+    </head>
+    <body>
+        <script>
+            //FOr Merge Two Arrays with Concat
+            var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+            document.write(a + "<br><br>");
+            var b=a.concat("Ruk jaa","Bs sae hy Boss");
+            document.write(b + "<br><br>");
+
+            //Other Method
+            var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+            var b= ["Sunjay","Neha","Rahul","Pta nae"];    
+            var c= a.concat(b);
+            document.write(c + "<br><br>");
+            
+            //Other Method
+            var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+            var b= ["Sunjay","Neha","Rahul","Pta nae"];  
+            var c=["3ra pnga","Hello g"];
+            var d= a.concat(b,c);
+            document.write(d + "<br><br>");
+
+            //Joins using to create an array to show as a string in a single value
+            var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+            var b= ["Sunjay","Neha","Rahul","Pta nae"];    
+            var c= a.concat(b);
+            document.write(c + "<br><br>");
+            var d =c.join("");
+            document.write("<br><br><br>" +d +"<br><br><br>");
+
+            var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+            document.write(c + "<br><br>");
+            var d =c.join("-");
+            document.write(d);
+        </script>
+    </body>
+</html>

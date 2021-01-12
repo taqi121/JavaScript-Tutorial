@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+        document.write(a + "<br><br>");
+        
+        //if i want to get specific index Values from any Array
+        var b=a.slice(1,4);
+        document.write(b + "<br><br>");
+
+        var b=a.slice(1);
+        document.write(b + "<br><br>");
+
+        var b=a.slice(-2);
+        document.write(b + "<br><br>");
+
+        var b=a.slice(-3,-1);
+        document.write(b + "<br><br>");
+
+        //if i want to add values on my desired position then i use splice function in this function i specify the position
+        //splice(index,howmany,"New Value",Delete)
+       
+        var c= ["Taqi","Ali","Azeem","Tkashi"];
+        document.write(c + "<br><br>");
+        c.splice(2,0,"Bilal","Malik");
+        document.write(c + "<br><br>");
+
+        var c= ["Taqi","Ali","Azeem","Tkashi"];
+        document.write(c + "<br><br>");
+        c.splice(-2,0,"Bilal","Malik");
+        document.write(c + "<br><br>");
+
+        //In second parameter we give index number to delete index
+
+        var c= ["Taqi","Ali","Azeem","Tkashi"];
+        document.write(c + "<br><br>");
+        c.splice(2,1,"Bilal","Malik");
+        document.write(c + "<br><br>");
+
+        //if i want to delete index only then i use splice
+        var c= ["Taqi","Ali","Azeem","Tkashi"];
+        document.write(c + "<br><br>");
+        c.splice(2,2);
+        document.write(c + "<br><br>");
+    </script>
+</body>
+</html>
