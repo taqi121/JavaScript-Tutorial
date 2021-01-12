@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var ages=[10,13,18,20,21,25];
+        var adultage=18;
+        //if i want to check any person in array is adult or not 
+        //i can find through loops but this is not a smart work i use some() function of JavaScript to find my desired
+        //it returns true if he find any person and return false if not verified
+        document.write(ages + "<br><br>");
+
+        var b=ages.some(checkAdult);
+
+        document.write("Is any adult person is exist in array??? "+b + "<br><br>");
+        
+        function checkAdult(age)
+        {
+            return age>=18;
+        }
+
+        //Every function works like some but it checks every value in array if every value in array is specify our condition
+        //then it return true otherwise it returns false on every test
+        var ageslessthan18=[10,13,18,20,21,25];
+        var agesgreatorthan18=[20,18,19,25,26];
+        var adultage=18;
+        document.write("Mixed Aged person including less than 18:  "+ageslessthan18 + "<br><br>");
+        var c=ageslessthan18.every(checkAdult);
+        document.write("Is Every adult person is exist in array??? "+c + "<br><br>");   
+        function checkAdult(age)
+        {
+            return age>=18;
+        }
+
+        document.write("Mixed Aged person including Greator than 18:  "+agesgreatorthan18 + "<br><br>");
+        var c=agesgreatorthan18.every(checkAdult);
+        document.write("Is Every adult person is exist in array??? "+c + "<br><br>");   
+        function checkAdult(age)
+        {
+            return age>=18;
+        }
+
+
+   </script>
+</body>
+</html>

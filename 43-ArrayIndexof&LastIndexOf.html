@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if i want to check any name or value is exist in the array or not
+        //indexOf("Search item",Start)
+        //if it get value in array it stops to searching again
+        var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+        document.write(a + "<br><br>");
+
+        var b=a.indexOf("Bilal");
+        document.write("<br><br>Position of desired is person in array is: "+b+"<br><br>");
+        //i Specify the position of pointer for searching in array
+        var b=a.indexOf("Bilal",2);
+        document.write("<br><br>Position of desired is person in array is: "+b+"<br><br>");
+   
+        //if a search a name which is not exist in the code then it return in negative values
+        var b=a.indexOf("HopeForBest");
+        document.write("<br><br>Position of desired is person in array is: "+b+"<br><br>");
+
+        //Lastindexof Function start searching from end of the array
+        //indexOf("Search item",Start)
+        var d= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+        document.write(a + "<br><br>");
+
+        var e=d.indexOf("Taqi");
+        document.write("<br><br>Position of desired is person in array is: "+e+"<br><br>");
+
+
+   
+   </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var ages=[10,23,19,20];
+        var adultAge=18; 
+        //if i want to search any person from array that he is exist in array or not
+        //find(Function Name/Condition)
+        //it gets only first find value and stops
+        document.write(ages + "<br><br>");
+
+        var b = ages.find(checkAdult);
+        document.write("First person in array who is adult: "+b + "<br><br>");
+        //findIndex(Function)
+        //It returns the first Index of array of desired person returns index of required value
+        
+        
+        var b = ages.findIndex(checkAdult);
+        document.write("Index of First person in array who is adult: "+b + "<br><br>");
+ 
+        function checkAdult(age){
+            return age>=18;
+        }
+    </script>
+</body>
+</html>
