@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var a= {
+            firstName: 'Taqi',
+            lastName: 'Malik',
+            age: 23,
+            country: 'Pakistan',
+            email: 'taqi.malik86@gmail.com',
+            //We can create arrays and functions in objects
+            favMovies : ['Dhoom','Sholay','Hum'],
+            salary : function(){
+                return 50000;
+            },
+            //this catches the address of object and get owner of property
+            fullName: function(){
+                return this.firstName + " "+ this.lastName;
+            }, 
+            //We can create object in existing object
+            living: {
+                'city':'Sheikhupura',
+                'country':'Pakistan'
+            }
+        };
+        //An object is a collection of properties, and a property is an association between a name (or key) and a value. 
+        //A property's value can be a function, in which case the property is known as a method. In addition to objects 
+        //that are predefined in the browser, you can define your own objects.
+       // document.write(a); Output[Object object]
+
+       console.log(a);
+       //i cannot print whole object through his actual name but i can show with their property
+       //like
+       console.log(a.firstName);
+       document.write(a.firstName+ "<br>");
+       document.write(a.lastName+ "<br>");
+       document.write(a.age+ "<br>");
+       document.write(a.country+ "<br>");
+       document.write(a.email+ "<br>");
+       
+       document.write(a.favMovies+ "<br>");
+
+       document.write(a.favMovies[1]+ "<br>");
+
+       document.write(a.salary()+ "<br>");
+
+       document.write(a.fullName()+ "<br><br>");
+       document.write("Object in a object "+ "<br>");
+       document.write(a.living.city + "<br>"); 
+       document.write(a.living.country + "<br>"); 
+    </script>
+</body>
+</html>

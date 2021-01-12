@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var a= ["Taqi","Ali","Azeem","Tkashi","Bilal","Malik"];
+        document.write(a + "<br><br>");
+
+        //if i didn't know the last index of array and i want to print all values in array
+        //a.foreach(function){Statement}
+
+        a.forEach(function(value){
+            document.write(value + "<br>");
+        });
+        document.write("<br><br>");
+        //I print index of array also with this 
+        a.forEach(loop);
+
+        function loop(value,index){
+            document.write(" "+ index +" "+value + "<br>");
+        }
+    </script>
+</body>
+</html>

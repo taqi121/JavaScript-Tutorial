@@ -7,7 +7,17 @@
 </head>
 <body>
     <script>
-        
+        //if i search every value from array and if it true my condition and all the desired persons are copied in new array
+        //filter(Function name)
+        var ages=[12,10,15,50,46,47];
+        document.write(ages+ "<br><br>");
+
+        var b =ages.filter(checkAdult);
+        document.write("Ages of Persons after filter function: "+b+ "<br><br>");
+
+        function checkAdult(age){
+            return age>=18;
+        }
     </script>
 </body>
 </html>
