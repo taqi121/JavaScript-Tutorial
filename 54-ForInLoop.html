@@ -7,7 +7,20 @@
 </head>
 <body>
     <script>
-        
+        //if i want to print different objects then we use forIn loop
+        //for(var i in a){statement}
+        var obj= {
+            firstName: 'Taqi',
+            lastName: 'Malik',
+            age: 23,
+            country: 'Pakistan',
+            email: 'taqi.malik86@gmail.com',
+        }
+
+        for(var key in obj)
+        {
+            document.write(key + " : " + obj[key] + "<br>");
+        }
     </script>    
 </body>
 </html>

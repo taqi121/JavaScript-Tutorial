@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        //Almost same like array methods but some difference between array methods and mapFunction is
+        //if want to multiply or i want to multiply every or divide or performs any function on array then i use map function it cannot harm to existing array and create a new array
+        //a.map(function(){statement});
+        var arr=[11,5,9,7,8,3,4,12,54];
+
+        //if i want to multiply with 10 on every index
+        var b=arr.map(test);
+
+        document.write("Before Apply Map Function<br>"+arr+"<br><br>");
+
+        document.write("After Apply Map Function<br>"+b+"<br><br>");
+        
+        var ary=[
+            {fname:"Taqi",Lname:"Malik"},
+            {fname:"Ali",Lname:"Ahsan"},
+            {fname:"Hafiz",Lname:"Azeem"},
+            {fname:"Muhammad",Lname:"Bilal"},
+            {fname:"Talha",Lname:"Zubair"}
+        ]
+        
+        var d=ary.map(test1);
+        
+        document.write("Object Prints <br>"+d+"<br><br>")
+        
+        function test(x){
+            return x*10;
+        }
+        function test1(x){
+            return x.fname + " "+x.Lname;
+        }
+    </script>
+</body>
+</html>

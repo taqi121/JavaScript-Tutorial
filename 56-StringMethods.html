@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var str="Hello world JavaScript is a Language";
+        document.write("<br>String is : "+str+"<br><br>");
+        var a = str.length;
+
+        document.write("<br>Length of a is: "+a+"<br><br>");
+
+        var b =str.toLowerCase();
+        document.write("<br>Convert Small Letters: "+b+"<br><br>");
+
+        var b =str.toUpperCase();
+        document.write("<br>Convert Capital Letters: "+b+"<br><br>");
+    
+        //includes search any word any return true or false
+        //Includes is a case sensitive methods.
+        var c =str.includes("JavaScript");
+        document.write("<br>: JavaScript exists in string ??  "+c+"<br><br>");
+
+        //startWith search only first letter in string and endsWith search only last word of string and return true or false
+        //THis method is also a case sensitive and only search exact word
+        var d =str.startsWith("JavaScript");
+        document.write("<br>: Is JavaScript is tha first word of string ??  "+d+"<br><br>");
+  
+        var e =str.endsWith("JavaScript");
+        document.write("<br>: Is JavaScript is tha Last word of string ??  "+e+"<br><br>");
+
+        //search same like includes but it returns the value of index not true or false
+        var f =str.search("JavaScript");
+        document.write("<br>: index of JavaScript word exists in string ??  "+f+"<br><br>");
+        //if word is not match from string it simply returns the -1
+        var g =str.search("java");
+        document.write("<br>:index of JavaScript word exists in string ??  "+g+"<br><br>");
+
+        //match is also same like search function but it returns value from string it create an array of all same word search words from string 
+        //if want to find globally values then i use /"wordName"/g
+        var h =str.match("is");
+        document.write("<br>: array of search words is ??  "+h+"<br><br>");
+        
+        //IndexOf and LastIndexOf are same like array function it returns index of values and same like search
+
+        var i =str.indexOf("is");
+        document.write("<br>: Returns Index of desired Word from last Index ??  "+i+"<br><br>");
+
+        var j =str.lastIndexOf("is");
+        document.write("<br>: Returns Index of desired Word from last Index ??  "+j+"<br><br>");
+
+        //replace function is use to replace any word it have 2 parameter 1st for existing and other for Change
+
+        var k =str.replace(/is/g,"are");
+        document.write("<br>: Replace is function with are globally  ??  "+k+"<br><br>");
+
+        var l =str.replace("Hello","Hi");
+        document.write("<br>: Replace only Hello Word with Hi ??  "+l+"<br><br>");
+
+        //trim use for removing extra spaces from string after words
+        var newStr ="  Hello   JavaScript    ";
+        var m=newStr.trim();
+        document.write("After Removing Spaces: "+m+"<br><br>");
+        
+  </script>
+</body>
+</html> 

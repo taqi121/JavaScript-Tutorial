@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var str="Hello world JavaScript is a Language";
+        document.write("<br>String is : "+str+"<br><br>");
+       
+        //CharAt we define a position and get character at the position
+        var a= str.charAt(3);
+        document.write("<br>Char at position 3 in string : "+a+"<br><br>");
+
+        //charCodeAt and fromCharCode both are almost same methods they returns ASCII codes for the character 
+        //Both returns ASCII code
+        var b= str.charCodeAt(3);
+        document.write("<br>ASCII code for char at 3 index : "+b+"<br><br>");
+        //It doesn't use any string it returns the value at ASCII code
+        var c= String.fromCharCode(3);
+        document.write("<br>Value at ASCII code 3 : "+c+"<br><br>");
+        
+        //concat method is used to join two or more strings
+        var str2="Pta nae";
+        var str3="Nikal";
+        var d =str.concat(str2);
+        document.write("<br>After Concat Two Strings : "+d+"<br><br>");
+        
+        var e =str.concat(str2,str3);
+        document.write("<br>After Concat Three Strings : "+e+"<br><br>");
+         
+        //Split method used to break all string into words 
+        var f = str.split(" ");
+        document.write("<br>After Split All string : "+f+"<br><br>");
+       
+        //repeat method is used to print my desired times 
+        var g = str.repeat("3");
+        document.write("<br>3 Times repeat Array : "+g+"<br><br>");
+       
+        //In slice function last character is (-1) value and 2nd last is (-2) same as arrays
+        //Slice function is use to get any word or character from string
+        var h = str.slice("3");
+        document.write("<br>String starts from 3rd index : "+h+"<br><br>");
+        //String starts from 3 and ends on 10 index
+        var i = str.slice("3","10");
+        document.write("<br>String starts from 3rd index and ends on 10th Index: "+i+"<br><br>");
+
+        //Substr and substring both are same as slice but minor difference is happening between them
+        var j = str.substr("3");
+        document.write("<br>String starts from 3rd index : "+j+"<br><br>");
+
+        //1st parameter is the starting index of string but 2nd parameter is used to count words next words from 3rd index and print them 
+        var k = str.substr("3","10");
+        document.write("<br>String starts from 3rd index and next 10 words from 3rd index : "+k+"<br><br>");
+
+       //Substring is almost same as slice but it cannot count last word of desired in this example it will not print 10th index it will print till 9th index
+       var l = str.substring("3","10");
+       document.write("<br>String starts from 3rd index and ends on 9 index : "+l+"<br><br>");
+
+       //ToString is used to specifically convert any object or string to string
+       var str2=50;
+       var m =str2.toString();
+       document.write("<br>Converts "+str2+" into string : "+m+"<br><br>");
+       document.write("<br>:if i add str2 and 20 : "+str2+20+"<br><br>");
+
+       //ValueOf function is by default function to simply print the all string its uses is not most important
+       var n=str.valueOf();
+       document.write("<br>String after apply valueOf method  : "+n+"<br><br>");
+
+    </script>
+</body>
+</html>
