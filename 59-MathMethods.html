@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        //In this we cover all maths methods
+        //ceil methods returns number when it is in float time
+        //it is compulsory to write Math before every math method
+        //Ceil returns upper nearest value of given number
+        var a =Math.ceil(5.3);
+        document.write("<br>: Upper number value nearest to 5.3 or desired number : "+a+"<br><br>");
+
+        var b =Math.ceil(1.2);
+        document.write("<br>: Upper number value nearest to 1.2 or desired number : "+b+"<br><br>");
+
+        var c =Math.ceil(-2.45);
+        document.write("<br>: Upper number value nearest to -2.45 or desired number : "+c+"<br><br>");
+
+        //floor returns lower/Downward nearest value of given number
+        var d =Math.floor(5.6);
+        document.write("<br>: Lower number value nearest to 5.6 or desired number : "+d+"<br><br>");
+
+        var e =Math.floor(100.152);
+        document.write("<br>: Lower number value nearest to 100.152 or desired number : "+e+"<br><br>");
+
+        var f =Math.floor(-2.45);
+        document.write("<br>: Lower number value nearest to -2.45 or desired number : "+f+"<br><br>");
+
+        var g =Math.floor(0.10);
+        document.write("<br>: Lower number value nearest to 0.10 or desired number : "+g+"<br><br>");
+
+        //round it round about the decimal number round only works with float numbers not Integers
+        //it add 1 number in integer if given integer is greater than or equal to 5 other it cannot change any value
+        var h =Math.round(5.6);
+        document.write("<br>: Number 5.6 after applying round method : "+h+"<br><br>");
+
+        var i =Math.round(5.632549);
+        document.write("<br>: Number 5.632549 after applying round method : "+i+"<br><br>");
+
+        //trunc returns only integer value and avoid all decimal numbers 
+        var j =Math.trunc(5.6);
+        document.write("<br>: Number 5.6 after applying trunc method : "+j+"<br><br>");
+
+        //max function returns the maximum value from array or any collection of Numbers
+        var k =Math.max(8,10,15,6,50,47,56,2,7);
+        document.write("<br>: Maximum Number from (8,10,15,6,50,47,56,2,7) is : "+k+"<br><br>");
+
+        //min function returns the minimum value from array or any collection of Numbers
+        var l =Math.min(8,10,15,6,50,47,56,2,7);
+        document.write("<br>: Minimum Number from (8,10,15,-6,50,47,56,2,7) is : "+l+"<br><br>");
+
+        //sqrt (square Root) You Know naa learn from school level
+        var m =Math.sqrt(4);
+        document.write("<br>: Square root of 4 is : "+m+"<br><br>");
+
+        var n =Math.sqrt(210);
+        document.write("<br>: Square root of 210 is : "+n+"<br><br>");
+
+        //cbrt (Cubic Root) having knowledge from School Level example 5*5*5=125
+        var o =Math.cbrt(125);
+        document.write("<br>: Cubic root of 125 is : "+o+"<br><br>");
+
+        //Power Function Having knowledge from school level
+        //1st parameter is a number and 2nd parameter is a power of number
+        var p =Math.pow(5,4);
+        document.write("<br>: 5 power 4 is : "+p+"<br><br>");
+
+        //random method is used to get every random value from array or collection of numbers it choose number on its own.
+        //by default it returns the value in between 0 and 1 
+        var q =Math.random();
+        document.write("<br>: any Number between 0 and 1 : "+q+"<br><br>");
+
+        //If i get number with multiply 10 and add 1 in random number finally gets its floor value
+        var r =Math.floor((Math.random() * 10) + 1);
+        document.write("<br>: any Number with multiply with 10 and addition of 1 after floor : "+r+"<br><br>");
+
+        //abs(absolute) it returns the absolute value from given it ignores the signs with the number and returns the value only
+        var s =Math.abs(5.25);
+        document.write("<br>: Absolute number from +5.25 : "+s+"<br><br>");
+
+        var t =Math.abs(-5.25);
+        document.write("<br>: Absolute number from -5.25 : "+t+"<br><br>");
+
+        var u =Math.abs("Hello");
+        document.write("<br>: Absolute number from Hello String : "+u+"<br><br>");
+   
+        var v =Math.abs(2+3);
+        document.write("<br>: Absolute number from 2+3 : "+v+"<br><br>");
+
+        //PI we also know about this in our schools
+        var w =Math.PI;
+        document.write("<br>: Value of PI is : "+w+"<br><br>");
+
+   </script>
+</body>
+</html>

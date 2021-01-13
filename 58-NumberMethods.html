@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        //number methods converts every number or string into number
+        var a= "99";
+
+        var num=Number(a);
+        document.write("Converts String into Number : "+num+"<br><br>");
+
+        //Arithmatic calculations are happens after convert strings into number
+        document.write("Multiply Number 99 with 100 : "+num*100+"<br><br>");
+
+        //it converts true and false into numbers 1 and 0
+        //Example
+        var b= true;
+        var numb=Number(b);
+        document.write("Print value of true in bits or numbers : "+numb+"<br><br>");
+
+        //It returns not a number as a result
+        var c= "80 99";
+        var numb=Number(c);
+        document.write("String in with spaces and alphabets : "+numb+"<br><br>");
+
+
+        //ParseInt converts number into integers and remove values after (.) it pick first number from string without space and print it one more thing it converts decimals to integers
+        var d= "80 99";
+        var numb=parseInt(d);
+        document.write("Parse Int : "+numb+"<br><br>");
+
+        var e= "10.00";
+        var numb=parseInt(e);
+        document.write("Parse Int : "+numb+"<br><br>");
+
+        var f= "050 years";
+        var numb=parseInt(f);
+        document.write("Parse Int : "+numb+"<br><br>");
+
+        var g= "He was 50";
+        var numb=parseInt(g);
+        document.write("Parse Int : "+numb+"<br><br>");
+        
+        //ParseFloat is same as parseInt the difference in between both are it reads values after . it returns decimal Values 
+        
+        var h= "80 99";
+        var numb=parseFloat(h);
+        document.write("Parse Float : "+numb+"<br><br>");
+
+        var i= "10.5555";
+        var numb=parseFloat(i);
+        document.write("Parse Float : "+numb+"<br><br>");
+
+        var j= "050 years";
+        var numb=parseFloat(j);
+        document.write("Parse Float : "+numb+"<br><br>");
+
+        var k= "He was 50";
+        var numb=parseFloat(k);
+        document.write("Parse Float : "+numb+"<br><br>");
+
+
+        //isFinite  check the given number is finite or not if finite number it returns true otherwise false
+        var l= "10.00";
+        var numb=Number.isFinite(l);
+        document.write("Is the given Number is Finite??? : "+numb+"<br><br>");
+
+        var l= "10";
+        var numb=isFinite(l);
+        document.write("Is the given Number is Finite??? : "+numb+"<br><br>");
+
+        var m= "-10.00";
+        var numb=isFinite(m);
+        document.write("Is the given Number is Finite??? : "+numb+"<br><br>");
+
+        var n= "Hello";
+        var numb=isFinite(n);
+        document.write("Is the given Number is Finite??? : "+numb+"<br><br>");
+
+        var n= Infinity;
+        var numb=isFinite(n);
+        document.write("Is the given Number is Finite??? : "+numb+"<br><br>");
+
+        //isInteger check the given number is finite or not if finite number it returns true otherwise false
+        var o= "10.00";
+        var numb=Number.isInteger(o);
+        document.write("Given Number is Integer???? : "+numb+"<br><br>");
+
+        var p= "10";
+        var numb=Number.isInteger(p);
+        document.write("Given Number is Integer???? : "+numb+"<br><br>");
+
+        var q= "false";
+        var numb=Number.isInteger(q);
+        document.write("Given Number is Integer???? : "+numb+"<br><br>");
+
+        var r= 10-5;
+        var numb=Number.isInteger(r);
+        document.write("Given Number is Integer???? : "+numb+"<br><br>");
+
+        var s= 10;
+        var numb=Number.isInteger(s);
+        document.write("Given Number is Integer???? : "+numb+"<br><br>");
+
+        //toFixed is used to fixed the value as we desired
+        var t= 10.589754;
+        var numb=t.toFixed(2);
+        document.write("Rounds number after 2 positions after (.) : "+numb+"<br><br>");
+
+        var u= 10.589754;
+        var numb=u.toFixed(3);
+        document.write("Rounds number after 3 positions after (.) : "+numb+"<br><br>");
+        
+        //toPercision returns integer according to our parameter
+        var v= 10.589754;
+        var numb=v.toPrecision(3);
+        document.write("Returns only 3 integers and round about last integer : "+numb+"<br><br>");
+        
+        //it returns total 10 digits
+        var w= 10.589754;
+        var numb=w.toPrecision(10);
+        document.write("Returns only 10 integers and round about last integer : "+numb+"<br><br>");
+        
+    </script>    
+</body>
+</html>
